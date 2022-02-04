@@ -30,7 +30,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+!
+![desktop-image](https://user-images.githubusercontent.com/68693000/152610420-762aee12-beff-4163-89c9-58376d08e52b.png)
+![mobile-image](https://user-images.githubusercontent.com/68693000/152610438-d3a8d458-d049-4227-afab-8259f04e105d.jpg)
 
 
 ### Links
@@ -47,7 +49,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Styled Components](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css) - For styles
+- [Styled Components](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css) - For icons
 
 ### What I learned
 
