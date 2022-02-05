@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+   background-color:hsl(273, 75%, 66%);
+   font-size: 12px;
+   font-family: 'Kumbh Sans', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   padding: 5rem 3rem;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+}
+.mobile-image{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 200px;
+    width: 100% ;
+    margin-bottom: -6.75rem;
+}
+
+.content{
+    background-color: white;
+    border-radius: 20px;
+    padding: 6rem 1rem 3rem;
+}
+.desktop-image{
+    display: none;
+}
+.img-box{
+    display: none;
+}
+.mobile-image-bottom{
+    position: absolute;
+    width: 12rem;
+    margin-top: -1.9rem;
+}
+.mobile-image-top{
+    position: absolute;
+    width: 12rem ;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:2rem;
+}
+.accordion-row{
+    border-bottom: 1px solid hsl(240, 6%, 50%);
+}
+
+.accordion-link{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(240, 6%, 50%);
+    padding: 1.5rem 0;
+    font-weight: 700;
+    text-decoration: none;
+}
+.accordion-link:hover{
+    color: hsl(14, 88%, 65%);
+}
+.accordion-link:target{
+    color: #000;
+}
+
+.fa{
+    color: hsl(14, 88%, 65%);
+}
+.accordion-link .fa-chevron-up{
+    display: none;
+}
+
+.answer{
+    overflow: hidden;
+    max-height: 0;
+    color: #767873;
+    position: relative;
+    transition: max-height 650ms;
+}
+.answer::before{
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.accordion-row:target .answer{
+    max-height: 20rem;
+}
+.accordion-row:target .accordion-link .fa-chevron-down{
+    display: none;
+}
+.accordion-row:target .accordion-link .fa-chevron-up{
+    display: block;
+}
+@media screen and (min-width:600px) {
+    .mobile-image-bottom{
+        position: absolute;
+        width: 100%;
+        margin-top: 1.9rem;
+    }
+    .mobile-image-top{
+        position: absolute;
+        width: 100%;
+    }
+    .content{
+        padding: 8rem 1rem 3rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:1000px){
+    body{
+        padding:7rem 7rem;
+        font-size: 1rem;
+        margin: auto;
+        height: auto;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 24px;
+        overflow: hidden;
+    }
+
+    .mobile-image{
+        display: none;
+    }
+    .desktop-image{
+        display: flex;
+        position: relative;
+    }
+    .img-up{
+        width: 400px;
+        margin-left: -100px;
+    }
+    .img-down{
+        width: 650px;
+        margin-top: -200px;
+        margin-left: -650px;
+        position: absolute;
+    }
+    .img-box{
+        display: block;
+        width: 150px;
+        margin-top: 100px;
+        margin-right: -80px;
+        z-index: 1;
+    }
+    .content{
+        padding: 3rem 6rem;
+    }
+  
+}
