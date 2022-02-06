@@ -6,8 +6,8 @@
 }
 body{
     background: linear-gradient(
-        hsl(240, 73%, 65%) 0%,
-        hsl(273, 75%, 66%) 100%) no-repeat center center fixed;
+        hsl(273, 75%, 66%),
+        hsl(240, 73%, 65%)) no-repeat center center fixed;
    font-size: 12px;
    font-family: 'Kumbh Sans', sans-serif;
 }
